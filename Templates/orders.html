@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Orders</title>
+</head>
+<body>
+    <h1>Orders</h1>
+    <ul>
+        {% for order in orders %}
+        <li>
+            <strong>Name:</strong> {{ order.name }}<br>
+            <strong>Order:</strong> {{ order.order }}
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Place another order</a>
+</body>
+</html>

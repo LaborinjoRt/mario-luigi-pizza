@@ -1,0 +1,79 @@
+body {
+    font-family: "Aka Posse";
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Light gray background */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    background-size: cover;
+    color: #ffffffd9;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    text-size-adjust: 100px;
+ 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.706);
+    font-weight: bold;
+    text-align: center;
+    transition: text-color 0.3s, color 0.3s;
+    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.244);
+    transition: transform 0.3s;
+    margin-right: 40px;
+    margin-left: 40px; /* Added space between menu items */
+    font-size: 23px; /* Increased font size */
+}
+
+
+
+.intro h1 {
+    font-size: 48px; /* Larger heading */
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 20px; /* Larger text */
+    line-height: 1.6;
+}
+
+
+.intro {
+    background: linear-gradient(rgba(255, 105, 105, 0.316), rgba(255, 105, 115, 0.6)), url(https://cdn10.phillymag.com/wp-content/uploads/sites/3/2021/03/eeva-pizza-9x6-1.jpg);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.special-button {
+    color:#ffffff;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 10px 20px; /* Adjusted padding for all boxes */
+    width: 150px; /* Set a specific width */
+    text-align: center; /* Center the text */
+    border-radius: 10px; /* Make it more oval */
+    background-color: #981a1af4; /* Darker background color */
+    display: inline-block; /* Make it a block element */
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.244);
+    transition: transform 0.3s; /* Smooth transitions for both background color and text color on hover */
+}
+.special-button:hover {
+    background-color: #d86227f4; /* Change background color on hover */
+    color: #fff; 
+    transform: scale(1.05); /* Slight scale on hover */
+/* Change text color on hover */
+}

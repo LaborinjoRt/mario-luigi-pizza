@@ -5,9 +5,9 @@ app = Flask(__name__)
 # Create an empty list to store orders
 orders = []
 
-@app.route('/')
+@app.route('/Restaurant.html')
 def order_form():
-    return render_template('order.html')
+    return render_template('Restaurant.html')
 
 @app.route('/submit_order', methods=['POST'])
 def submit_order():
@@ -19,9 +19,9 @@ def submit_order():
 
     return redirect(url_for('order_form'))
 
-@app.route('/orders')
+@app.route('/Menu_customers.html')
 def view_orders():
-    return render_template('orders.html', orders=orders)
+    return render_template('Menu_customers.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

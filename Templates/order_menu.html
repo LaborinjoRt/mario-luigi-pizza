@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>#</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="">
+        <link rel="javascript" href="order_slideshow.java">
+        <link rel="stylesheet" href="order_page.css">
+     
+    </head>
+
+    <body>
+       <header>
+    <img src="mariospizzeriaLT4-removebg.png" width="300px" height="80px">
+    <nav class="navbar">
+        <a href="Restaurant.html">Home</a>
+        <a href="#"  ><img src="shopping-basket.png" width="30px" height="30px"></a>
+    </nav>
+        </header>
+
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+   
+    <img src="Screenshot 2023-11-03 at 11.42.31.png" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+   
+    <img src="Screenshot 2023-11-03 at 11.42.31.png" style="width:100%" style="width:100%">
+   
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="Screenshot 2023-11-03 at 11.42.31.png" style="width:100%" style="width:100%">
+    
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+
+
+        <div class="sidebar">
+            <a style="text-align: center;" href="#products">Pizzas</a>
+            <a style="text-align: center;" href="#sweets">Sweets</a>
+            <a style="text-align: center;" href="#drinks">Drinks</a>
+            <a style="text-align: center;" href="#snacks">Snacks</a>
+        </div>
+        <script>
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+        </script>
+        <section id="products"> 
+          <div class="box"  ><a href=" pepperoni.html">
+            <div class="product"><img src="pizza_PNG43991.png" width="160px" height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+              <p style="color:rgba(0, 0, 0, 0.492)" align:center   >Pepperoni pizza</p>
+            
+            </div>
+            <div class="bottomcard">
+              <div class="price">14,99$</div>
+              <div><a style="text-decoration: none" href="#" class="button_add" >Add</a></div>
+          </div>
+        </div>
+      </a>
+            
+        <div class="box">
+            <div class="product"><img src="Pizza-Margherita-on-transparent-background-PNG.png" width="160px" height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+              <p style="color:rgba(0, 0, 0, 0.492)" align:center   >Margarita pizza</p>
+            
+            </div>
+            <div class="bottomcard">
+              <div class="price">12,99$</div>
+              <div><a style="text-decoration: none" href="#" class="button_add" >Add</a></div>
+          </div>
+        </div>
+
+        <div class="box">
+            <div class="product"><img src="cheese.png" width="160px" height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+              <p style="color:rgba(0, 0, 0, 0.492)" align:center   >Mozarella pizza</p>
+            
+            </div>
+            <div class="bottomcard">
+              <div class="price">18,99$</div>
+              <div><a style="text-decoration: none" href="#" class="button_add" >Add</a></div>
+          </div>
+        </div>
+        </section>
+        <section id="sweets">
+          <div class="box">
+            <div class="product"><img src="DESSERTS.png" width="160px" height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+              <p style="color:rgba(0, 0, 0, 0.492)" align:center   >Nutella pizza</p>
+            
+            </div>
+            <div class="bottomcard">
+              <div class="price">10,00$</div>
+              <div><a style="text-decoration: none" href="#" class="button_add" >Add</a></div>
+          </div>
+        </div>
+            
+        <div class="box">
+            <div class="product"><img src="a-plate-with-pancakes-and-fruit-on-it-free-png.png" width="160px" height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+              <p style="color:rgba(0, 0, 0, 0.492)" align:center   >Pancakes</p>
+            
+            </div>
+            <div class="bottomcard">
+              <div class="price">9,50$</div>
+              <div><a style="text-decoration: none" href="#" class="button_add" >Add</a></div>
+          </div>
+        </div>
+
+        <div class="box">
+            <div class="product"><img src="mouthwatering-strawberry-ice-cream-bowl-against-transparent-background_927015-1662.png" width="160px" height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+              <p style="color:rgba(0, 0, 0, 0.492)" align:center   >Icecream</p>
+            
+            </div>
+            <div class="bottomcard">
+              <div class="price">10,99$</div>
+              <div><a style="text-decoration: none" href="#" class="button_add" >Add</a></div>
+          </div>
+        </div>
+        </section>
+        <section id="drinks">
+          <div class="box">
+            <div class="product"><img src="pngtree-a-glass-bottle-of-drink-png-image_4566591.png" width="160px" height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+              <p style="color:rgba(0, 0, 0, 0.492)" align:center   >Coca Cola</p>
+            
+            </div>
+            <div class="bottomcard">
+              <div class="price">3,00$</div>
+              <div><a style="text-decoration: none" href="#" class="button_add" >Add</a></div>
+          </div>
+        </div>
+            
+        <div class="box">
+            <div class="product"><img src="png-clipart-hot-chocolate-flavor-cup-chocolate-caldo-chocolate.png" width="160px" height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+              <p style="color:rgba(0, 0, 0, 0.492)" align:center   >Hot chocholate</p>
+            
+            </div>
+            <div class="bottomcard">
+              <div class="price">4,99$</div>
+              <div><a style="text-decoration: none" href="#" class="button_add" >Add</a></div>
+          </div>
+        </div>
+
+        <div class="box">
+            <div class="product"><img src="cup-of-espresso-coffee-png.png" width="160px" height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+              <p style="color:rgba(0, 0, 0, 0.492)" align:center   >Coffee</p>
+            
+            </div>
+            <div class="bottomcard">
+              <div class="price">6,00$</div>
+              <div><a style="text-decoration: none" href="#" class="button_add" >Add</a></div>
+          </div>
+        </div>
+        </section>
+        <section id="snacks">
+          <div class="box">
+            <div class="product"><img src="Screenshot 2023-11-07 at 21.09.04.png" width="160px" height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+              <p style="color:rgba(0, 0, 0, 0.492)" align:center   >Nachos</p>
+            
+            </div>
+            <div class="bottomcard">
+              <div class="price">11,50$</div>
+              <div><a style="text-decoration: none" href="#" class="button_add" >Add</a></div>
+          </div>
+        </div>
+            
+        <div class="box">
+            <div class="product"><img src="sides_0002_domcherry-8455.png" width="160px" height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+              <p style="color:rgba(0, 0, 0, 0.492)" align:center   >Chicken popcorn</p>
+            
+            </div>
+            <div class="bottomcard">
+              <div class="price">13,99$</div>
+              <div><a style="text-decoration: none" href="#" class="button_add" >Add</a></div>
+          </div>
+        </div>
+
+        <div class="box">
+            <div class="product"><img src="isolated-portion-french-fries_219193-9461.png" width="160px" height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+              <p style="color:rgba(0, 0, 0, 0.492)" align:center   >Fries</p>
+            
+            </div>
+            <div class="bottomcard">
+              <div class="price">8,99$</div>
+              <div><a style="text-decoration: none" href="#" class="button_add" >Add</a></div>
+          </div>
+        </div>
+        </section>
+        
+
+    </body>
+</html>

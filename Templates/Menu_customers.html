@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>#</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="javascript" href="{{ url_for('static', filename= 'order_slideshow.java') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'Menu_customer.css') }}">
+
+</head>
+
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='mariospizzeriaLT4-removebg.png') }}" width="300px" height="80px">
+        <nav class="navbar">
+            <a href="Restaurant.html">Home</a>
+            <a href="Menu_customers.html">Menu</a>
+            <a href="#">Reserve</a>
+            <a href="#">Locations</a>
+            <a href="order_menu.html" class="special-button" style="color:#fff;">Order now!</a>
+        </nav>
+    </header>
+
+    <div class="sidebar">
+        <a style="text-align: center;" href="#products">Pizzas</a>
+        <a style="text-align: center;" href="#sweets">Sweets</a>
+        <a style="text-align: center;" href="#drinks">Drinks</a>
+        <a style="text-align: center;" href="#snacks">Snacks</a>
+    </div>
+
+    <section id="products">
+        <div class="box">
+            <div class="product"><img src="{{ url_for('static', filename='pizza_PNG43991.png') }}" width="160px"
+                    height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+                <p style="color:rgb(251, 248, 248)" align:center>Pepperoni pizza</p>
+            </div>
+            <div class="price">14,99$</div>
+        </div>
+
+        <div class="box">
+            <div class="product"><img
+                    src="Pizza-Margherita-on-transparent-background-PNG.png"
+                    width="160px" height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+                <p style="color:rgb(253, 253, 253)" align:center>Margarita pizza</p>
+            </div>
+            <div class="price">12,99$</div>
+        </div>
+
+        <div class="box">
+            <div class="product"><img src="cheese.png" width="160px"
+                    height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+                <p style="color:rgb(255, 255, 255)" align:center>Mozzarella pizza</p>
+            </div>
+            <div class="price">18,99$</div>
+        </div>
+    </section>
+
+    <section id="sweets">
+        <div class="box">
+            <div class="product"><img src="DESSERTS.png" width="160px"
+                    height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+                <p style="color:rgb(254, 254, 254)" align:center>Nutella pizza</p>
+            </div>
+            <div class="price">10,00$</div>
+        </div>
+
+        <div class="box">
+            <div class="product"><img
+                    src="a-plate-with-pancakes-and-fruit-on-it-free-png.png"
+                    width="160px" height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+                <p style="color:rgb(255, 255, 255)" align:center>Pancakes</p>
+            </div>
+            <div class="price">9,50$</div>
+        </div>
+
+        <div class="box">
+            <div class="product"><img
+                    src="mouthwatering-strawberry-ice-cream-bowl-against-transparent-background_927015-1662.png"
+                    width="160px" height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+                <p style="color:rgb(255, 255, 255)" align:center>Ice cream</p>
+            </div>
+            <div class="price">10,99$</div>
+        </div>
+    </section>
+
+    <section id="drinks">
+        <div class="box">
+            <div class="product"><img
+                    src="pngtree-a-glass-bottle-of-drink-png-image_4566591.png"
+                    width="160px" height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+                <p style="color:rgb(255, 255, 255)" align:center>Coca Cola</p>
+            </div>
+            <div class="price">3,00$</div>
+        </div>
+
+        <div class="box">
+            <div class="product"><img
+                    src="png-clipart-hot-chocolate-flavor-cup-chocolate-caldo-chocolate.png"
+                    width="160px" height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+                <p style="color:rgb(255, 255, 255)" align:center>Hot chocolate</p>
+            </div>
+            <div class="price">4,99$</div>
+        </div>
+
+        <div class="box">
+            <div class="product"><img
+                    src="cup-of-espresso-coffee-png.png" width="160px" height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+                <p style="color:rgb(255, 255, 255)" align:center>Coffee</p>
+            </div>
+            <div class="price">6,00$</div>
+        </div>
+    </section>
+
+    <section id="snacks">
+        <div class="box">
+            <div class="product"><img
+                    src="Screenshot 2023-11-07 at 21.09.04.png"
+                    width="160px" height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+                <p style="color:rgb(255, 255, 255)" align:center>Nachos</p>
+            </div>
+            <div class="price">11,50$</div>
+        </div>
+
+        <div class="box">
+            <div class="product"><img
+                    src="sides_0002_domcherry-8455.png"
+                    width="160px" height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+                <p style="color:rgb(255, 255, 255)" align:center>Chicken popcorn</p>
+            </div>
+            <div class="price">13,99$</div>
+        </div>
+
+        <div class="box">
+            <div class="product"><img
+                    src="isolated-portion-french-fries_219193-9461.png"
+                    width="160px" height="160px"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="description">
+                <p style="color:rgb(255, 255, 255)" align:center>Fries</p>
+            </div>
+            <div class="price">8,99$</div>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    background-size: cover;
+    color: #ffffffd9;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    text-size-adjust: 100px;
+ 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.706);
+    font-weight: bold;
+    text-align: center;
+    transition: text-color 0.3s, color 0.3s;
+    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.244);
+    transition: transform 0.3s;
+    margin-right: 40px;
+    margin-left: 40px; /* Added space between menu items */
+    font-size: 23px; /* Increased font size */
+}
+#products {
+    display: flex;
+    margin-left:365px;
+    margin-top: -180px;
+    
+}
+.box {
+  
+    color:#ffffff;
+    font-weight: bold;
+    margin: 0 30px;
+    padding: 10px 10px; /* Adjusted padding for all boxes */
+    width: 200px; /* Set a specific width */
+    height: 300px;
+    text-align: center; /* Center the text */
+    border-radius: 30px; /* Make it more oval */
+    background-color: #fffffff4; /* Darker background color */
+    display: inline-block; /* Make it a block element */
+    background: linear-gradient(to bottom, rgba(236, 246, 43, 0.519) 50%, rgba(228, 226, 226, 0.428) 50%) bottom;
+    background-size: 200% 200%;
+    transition: .5s ease-out;
+  }
+  .box:hover {
+    background-position: top;
+  }
+
+.price {
+    position: relative;
+    color: rgba(0, 0, 0, 0.492);
+    font-weight: bold;
+    margin: 65px 15px ; /* Adjusted margin */
+    padding: 10px 10px; /* Adjusted padding */
+    font-size: 14px; /* Adjusted font size */
+    text-align: center;
+    width:55px;
+    height:20px;
+    border-radius: 10px;
+    display: inline-block;
+    
+}
+.button_add {
+    position: relative;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 65px 15px ; /* Adjusted margin */
+    padding: 10px 10px; /* Adjusted padding */
+    font-size: 14px; /* Adjusted font size */
+    text-align: center;
+    width:55px;
+    height:35px;
+    border-radius: 10px;
+    background-color: #a62626cf;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.244);
+}
+
+.button_add:hover {
+    background-color: #857474f4;
+    color: #fff;
+    transform: scale(1.05);
+}
+.description{
+    margin: -60px 15px;
+    
+}
+.bottomcard {
+    display: flex;
+    
+}
+.sidebar {
+    height: 100%;
+    width: 300px;
+    padding-top: 100px;
+    position:sticky;
+   
+}
+
+.sidebar a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #979494;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+#sweets{
+    display: flex;
+    margin-top: 70px;
+    margin-left: 365px;
+}
+#drinks{
+    display: flex;
+    margin-top: 70px;
+    margin-left: 365px;
+}
+#snacks{
+    display: flex;
+    margin-top: 70px;
+    margin-left: 365px;
+}
